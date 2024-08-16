@@ -9,7 +9,7 @@ services:
       - 4699:8080
 
   rly0:
-    image: sherpalden/centralized-relay:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly0-data:/home/relayer/.centralized-relay
       - ./aws:/home/relayer/.aws
