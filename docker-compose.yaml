@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services:
   kms:
@@ -9,7 +9,7 @@ services:
       - 4699:8080
 
   rly0:
-    image: centralized-relay:latest
+    image: sherpalden/centralized-relay:latest
     volumes:
       - ./rly0-data:/home/relayer/.centralized-relay
       - ./aws:/home/relayer/.aws
