@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  kms:
+    image: nsmithuk/local-kms
+    volumes:
+      - ./kms-data:/data
+    ports:
+      - 4699:8080
+
+  rly0:
+    image: centralized-relay:latest
+    volumes:
+      - ./rly0-data:/home/relayer/.centralized-relay
+      - ./aws:/home/relayer/.aws
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh

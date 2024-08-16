@@ -1,0 +1,41 @@
+global:
+    timeout: 10s
+    kms-key-id: 3b087d51-cf4e-4e5c-9b7b-81ca8a583def
+chains:
+    icon:
+        type: icon
+        value:
+            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+            start-height: 0
+            address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
+            contracts:
+                connection: cx27e53417c445c21bbffb89629590250e5f92248a
+                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+            finality-block: 0
+            nid: 0x2.icon
+            disabled: false
+            step-min: 1
+            step-limit: 100000000000
+            step-adjustment: 50
+    solana:
+        type: solana
+        value:
+            disabled: false
+            rpc-url: https://rpc.ankr.com/solana_devnet/98af665db4f1c6be2ed8ce7d8caed10aade053c5bd7880844d8806b0eada8317
+            address: 7GoW5ACKgsKcjWKnfPXeGyZHMSNBJkqHFwjt5ex2i73z
+            xcall-program: 47QmEHEPSQqhpEjok5PmooeqdqBXRVpU11aRMhJGe6LW
+            connection-program: 4vfkXyxMxptmREF3RaFKUwnPRuqsXJJeUFzpCjPSSVMb
+            other-connections: []
+            dapps:
+                - name: xcall_manager
+                  program-id: EEtvdnChxMfrd2wFouin5UToTcwrrshHuCzkSECKxd3p
+                - name: balanced_dollar
+                  program-id: 3UsdbGPu41ytqZtqgu6Wr7XocXcsnFBPKujBJxQbsBd9
+                - name: asset_manager
+                  program-id: 8tJx9uFHvK33etttKFi8XWHEKMo3q3K6UdSWLTTKnUvX
+            cp-nids:
+                - 0x2.icon
+            alt-address: CHPQRSiJyMCGdqYhd8znUM9fHzQFH3gZtvDMmzyqs3Ex
+            nid: solana
+            gas-limit: 1000
+            start-height: 0
