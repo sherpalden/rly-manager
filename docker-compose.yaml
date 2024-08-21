@@ -8,11 +8,24 @@ services:
     ports:
       - 4699:8080
 
-  rly0:
-    image: centralized-relay:latest
+  rly-sui0:
+    image: centralized-relay-sui:latest
     volumes:
-      - ./rly0-data:/home/relayer/.centralized-relay
-      - ./aws:/home/relayer/.aws
+      - ./rly-sui0-data:/home/relayer/.centralized-relay
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
+
+  rly-sui1:
+    image: centralized-relay-sui:latest
+    volumes:
+      - ./rly-sui1-data:/home/relayer/.centralized-relay
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
     environment:
       - AWS_ENDPOINT_URL=http://kms:8080
     depends_on:
