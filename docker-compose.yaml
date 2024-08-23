@@ -5,8 +5,21 @@ services:
     image: nsmithuk/local-kms
     volumes:
       - ./kms-data:/data
+      - ./kms-init:/init
     ports:
       - 4699:8080
+
+  rly-sol0:
+    image: centralized-relay-sol:latest
+    volumes:
+      - ./rly-sol0-data:/home/relayer/.centralized-relay
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-sui0:
     image: centralized-relay-sui:latest

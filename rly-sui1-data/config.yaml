@@ -1,6 +1,6 @@
 global:
     timeout: 10s
-    kms-key-id: 
+    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
     icon:
         type: icon
