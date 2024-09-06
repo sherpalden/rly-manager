@@ -32,6 +32,20 @@ chains:
             connection-id: centralized-1
             connection-cap-id: 0x5e633b8baf655f4986a5d4b131ec316e8a9964108fd968c507c546cd92f78c27
             dapps:
+                - package-id: 0x223fab445ca35ed1add4b07d416ac2a0919faf5152b9ff0f19b10d98e5060503
+                  constants:
+                    clock: "0x6"
+                  modules:
+                    - name: spoke_token
+                      cap-id: 0x975b1a200e2715ae158b05bfba25706c270cc9df986f399f76cbd678252064fc
+                      config-id: 0x9472a3a4537978b788ff1c1ec869c3b1184fca5a2323246b531c06a6694f7c6a
+                - package-id: 0x6e7ede3b3a5f6297400c95829a71339609c303d1f38fb7f139e1612aef3d3e19
+                  constants:
+                    clock: "0x6"
+                  modules:
+                    - name: spoke_manager
+                      cap-id: 0x5cda951a79d3d5738ab350d0f62c2cace1b0637c31f1d9f51dc5a65e0aa82bde
+                      config-id: 0x330777cea107914b3adaa07feb3f928f88491a80ff140f0249ba4b7f7c345e14
                 - package-id: 0x271fe2081b77cc53b87f4bff094407e8c42dfa356ccb37f59e722259fa06dd85
                   constants:
                     clock: "0x6"
