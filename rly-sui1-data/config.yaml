@@ -25,10 +25,7 @@ chains:
             rpc-url: https://rpc.ankr.com/sui_testnet
             address: 0x5d6756d9d540d7fc52c7e882265c86e516e8e0d744c4bedf0786065568327e40
             nid: sui-test
-            xcall-package-ids:
-                - 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
-                - 0x709f84ef9c9d486ef8bca12c4453413a3c2ef0c53a80d790abde71fc2cc2c6f3
-                - 0x693a60a5098b346acb773e37bff767fa90c85645ca9dba5d63741cf2bea848eb
+            xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
             xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
             connection-id: centralized-2
             connection-cap-id: 0x7def1055adcc2c9928ee7640e2d35e2f091a8e6a897fee52f508efcff71bce22
@@ -37,3 +34,4 @@ chains:
             gas-limit: 5000000
             disabled: false
             start-tx-digest: ""
+            poll-interval: 6s
