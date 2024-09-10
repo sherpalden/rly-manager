@@ -44,3 +44,27 @@ services:
     depends_on:
       - kms
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
+
+  rly-stellar0:
+    image: centralized-relay-stellar:latest
+    volumes:
+      - ./rly-stellar0-data:/home/relayer/.centralized-relay
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
+
+  rly-stellar1:
+    image: centralized-relay-stellar:latest
+    volumes:
+      - ./rly-stellar1-data:/home/relayer/.centralized-relay
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh

@@ -1,0 +1,34 @@
+global:
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+chains:
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
+      contracts:
+        connection: cx8121034c7b5b21da8472a0850e6ae102b67d2393
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      disabled: false
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  stellar:
+    type: stellar
+    value:
+      disabled: false
+      nid: 0x2.stellar
+      soroban-url: https://soroban-testnet.stellar.org/
+      horizon-url: https://horizon-testnet.stellar.org/
+      address: GCQ5YPTO5ORNZ7WMADFAWP2D7NOJBZGDLWAUYNMSNLIHRNMSJXXFFWE3
+      contracts:
+        connection: CADSKLMTU7SX4ABM4UKYP7MAIRKGFKMTFFVW4WSBKJYDBBYKH6E3YH4T
+        xcall: CC3HXHXBMOOP5FPQAXY4TVY65OEVEIOPTZJ3GEJ4AEAQXYBEI2QNMZ6M
+      max-inclusion-fee: 100000
+      block-interval: 5s
+      network-passphrase: Test SDF Network ; September 2015
+      start-height: 0
