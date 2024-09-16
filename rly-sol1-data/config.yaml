@@ -1,0 +1,35 @@
+global:
+    timeout: 10s
+    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+chains:
+    icon:
+        type: icon
+        value:
+            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+            start-height: 0
+            address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
+            contracts:
+                connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
+                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+            finality-block: 0
+            nid: 0x2.icon
+            disabled: false
+            step-min: 1
+            step-limit: 100000000000
+            step-adjustment: 50
+    solana:
+        type: solana
+        value:
+            disabled: false
+            rpc-url: https://api.testnet.solana.com/
+            address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
+            xcall-program: DCCrvzYbxFbFz3K76T2RZji9PJgbuLMaKd62AS9hRwvJ
+            connection-program: 7iLXLLbvUx7oLcNHCZxF8oAQ6gwyawHM3a1JHMKk5SoW
+            other-connections:
+                - A3A496cjPkB9jYhKAj3ET84XUmTbxTU1F6CnahftPLob
+            cp-nids:
+                - 0x2.icon
+            alt-address: EenoGQ1cN3H6MdELt5UaZ4UcFLBvbGw1vRmii2kCXjFo
+            nid: solana-test
+            home-dir: /home/relayer/.centralized-relay
+            start-tx-sign: 

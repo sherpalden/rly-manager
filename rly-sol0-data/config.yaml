@@ -9,7 +9,7 @@ chains:
             start-height: 0
             address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
             contracts:
-                connection: cx70c607227cd4ee4681f4400b2fc1c2f67e48cba5
+                connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
                 xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
             finality-block: 0
             nid: 0x2.icon
@@ -23,29 +23,27 @@ chains:
             disabled: false
             rpc-url: https://api.testnet.solana.com/
             address: 7GoW5ACKgsKcjWKnfPXeGyZHMSNBJkqHFwjt5ex2i73z
-            xcall-program: D2Y1zv93GygWbo5simDx9J7E9g2g2sAEqckex5BRidrp
-            connection-program: 8o1Eu3ishe9DPB8bedjbRewGEhDEZHurXHA9TSpeudQ6
+            xcall-program: DCCrvzYbxFbFz3K76T2RZji9PJgbuLMaKd62AS9hRwvJ
+            connection-program: A3A496cjPkB9jYhKAj3ET84XUmTbxTU1F6CnahftPLob
             other-connections:
+                - 7iLXLLbvUx7oLcNHCZxF8oAQ6gwyawHM3a1JHMKk5SoW
             dapps:
-                - name: mock_dapp
-                  program-id: D5LgccEsHB8A8KCxYe8NbR225bB8nR6HogfirAM9pJ4D
-                  config-prefix: config
-                # - name: xcall_manager
-                #   program-id: AKgQ6MECUga4rUWRwiDkj3XZetp7eTrAhArdPBF7W3qJ
-                #   config-prefix: state
-                # - name: balanced_dollar
-                #   program-id: DnTw1FNEm3TAGXPMJSpNWau1TukRCtxMW9GUzM3eJxYN
-                #   config-prefix: state
-                #   other-prefix:
-                #     - bnusd_authority
-                # - name: asset_manager
-                #   program-id: BGzeVEn4LkKp8U7dhBP9SnUdYXsdkmFVjrG7awamyqWZ
-                #   config-prefix: state
-                #   other-prefix:
-                #     - vault_native
+                - name: xcall_manager
+                  program-id: 7WCY7VifxPQ35LbGB8fespWDqXdHJ9oEHWZLCKhe8cyc
+                  config-prefix: state
+                - name: balanced_dollar
+                  program-id: 41uJ59VqLXWJVDDiU6PHPn8Mzz5KtJGTDS6ZA2cLCdbe
+                  config-prefix: state
+                  other-prefix:
+                    - bnusd_authority
+                - name: asset_manager
+                  program-id: 7LCni1XXMkBmjpW5S88k63wbdyPvRkjY18fjN2hSKoCF
+                  config-prefix: state
+                  other-prefix:
+                    - vault_native
             cp-nids:
                 - 0x2.icon
             alt-address: EenoGQ1cN3H6MdELt5UaZ4UcFLBvbGw1vRmii2kCXjFo
-            nid: solana
+            nid: solana-test
             home-dir: /home/relayer/.centralized-relay
             start-tx-sign: 
