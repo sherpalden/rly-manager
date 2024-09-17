@@ -9,7 +9,7 @@ chains:
       start-height: 0
       address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
       contracts:
-        connection: cx8121034c7b5b21da8472a0850e6ae102b67d2393
+        connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
         xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
       finality-block: 0
       nid: 0x2.icon
@@ -26,8 +26,8 @@ chains:
       horizon-url: https://horizon-testnet.stellar.org/
       address: GCQ5YPTO5ORNZ7WMADFAWP2D7NOJBZGDLWAUYNMSNLIHRNMSJXXFFWE3
       contracts:
-        connection: CATAE66NNQESCCCGDMS77P7MUH5EB7CQVBK5K3RNCDBPVYBEEAWDBY5A
-        xcall: CBIBOMZJUAXJUHW2UKPUVJ6PBUA372VCECB2HYUOJOYGZD34VSKG7LTD
+        connection: CCPY4SCOKJ5C4EMEC2ZETGIBINRX6YP6KCWDWGWIAYARKE5LWWPQG7E3
+        xcall: CBTZ4JG6KDZMP462WYXE23TPDIFT276ZV6B55TAHR3MQSR5H7VHU7VS5
       max-inclusion-fee: 100000
       block-interval: 5s
       network-passphrase: Test SDF Network ; September 2015

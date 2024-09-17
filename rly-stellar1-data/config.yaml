@@ -9,7 +9,7 @@ chains:
       start-height: 0
       address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
       contracts:
-        connection: cx74c39b676bf14b5842eec9ddac74929be0361b89
+        connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
         xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
       finality-block: 0
       nid: 0x2.icon
@@ -26,7 +26,7 @@ chains:
       horizon-url: https://horizon-testnet.stellar.org/
       address: GA77PVPU6CB32XVGFP2BKFSHKG4HUWWF2IKLB6FOFFSWOS4VHEIKSOT6
       contracts:
-        connection: CDQPITUAQ6R5JZTCZTRQ2U3O5ALTZ73454KV4SN2FRWQHTYZKCDBGEWU
+        connection: CDN5AZB2CXBHDD6J5U26DKCOPKS5EALPY6WMKEN4L2CWNJFPU4DTWFKT
         # xcall: CBIBOMZJUAXJUHW2UKPUVJ6PBUA372VCECB2HYUOJOYGZD34VSKG7LTD
       max-inclusion-fee: 100000
       block-interval: 5s
