@@ -21,13 +21,13 @@ chains:
     type: stellar
     value:
       disabled: false
-      nid: 0x2.stellar
+      nid: stellar-test
       soroban-url: https://soroban-testnet.stellar.org/
       horizon-url: https://horizon-testnet.stellar.org/
       address: GCQ5YPTO5ORNZ7WMADFAWP2D7NOJBZGDLWAUYNMSNLIHRNMSJXXFFWE3
       contracts:
-        connection: CCPY4SCOKJ5C4EMEC2ZETGIBINRX6YP6KCWDWGWIAYARKE5LWWPQG7E3
-        xcall: CBTZ4JG6KDZMP462WYXE23TPDIFT276ZV6B55TAHR3MQSR5H7VHU7VS5
+        connection: CAWKW6GVI3RWLRBZ2SH3U42PRJS76FJJCZYTQFBPG5N2PDD7BYCLK56L
+        xcall: CB65L65DV73URVXNFQ3OJME52MXXKYYRGIOC3AIKE5ZF35NDVP4HKO6A
       max-inclusion-fee: 100000
       block-interval: 5s
       network-passphrase: Test SDF Network ; September 2015
