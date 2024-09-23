@@ -1,0 +1,18 @@
+{
+    "type": "stellar",
+    "value": {
+      "chain-id": "stellar",
+      "nid": "stellar",
+      "horizon-url": "https://rpc.ankr.com/http/stellar_horizon",
+      "soroban-url": "https://rpc.ankr.com/stellar_soroban",
+      "start-height": 0,
+      "address": "GCQ5YPTO5ORNZ7WMADFAWP2D7NOJBZGDLWAUYNMSNLIHRNMSJXXFFWE3",
+      "max-inclusion-fee": 100000,
+      "contracts": {
+        "xcall": "CBD2YWKFJWNGD347TVKMFGQ6LSTPMVJ5QM5MLD62OLPKLMKIJWXJGK7O",
+        "connection": "CBD2YWKFJWNGD347TVKMFGQ6LSTPMVJ5QM5MLD62OLPKLMKIJWXJGK7O"
+      },
+      "network-passphrase": "Public Global Stellar Network ; September 2015"
+    }
+}
+  

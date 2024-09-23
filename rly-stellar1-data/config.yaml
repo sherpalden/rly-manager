@@ -26,7 +26,7 @@ chains:
       horizon-url: https://horizon-testnet.stellar.org/
       address: GA77PVPU6CB32XVGFP2BKFSHKG4HUWWF2IKLB6FOFFSWOS4VHEIKSOT6
       contracts:
-        connection: CAM3QCIW23TIEE37V7CNO4QYU2CQWIXGGUD4RPBM3WUJFB42REEID2C5
+        connection: CB7XOLRD5ZO5XO2LGCECMBN7YZVW3EGY7EL7CUDWPBP3DYTQ4HCFQFW5
       max-inclusion-fee: 100000
       block-interval: 5s
       network-passphrase: Test SDF Network ; September 2015
