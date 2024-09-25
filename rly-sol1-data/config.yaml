@@ -21,15 +21,15 @@ chains:
         type: solana
         value:
             disabled: false
-            rpc-url: https://api.testnet.solana.com/
+            rpc-url: https://api.devnet.solana.com/
             address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
-            xcall-program: DCCrvzYbxFbFz3K76T2RZji9PJgbuLMaKd62AS9hRwvJ
-            connection-program: 7iLXLLbvUx7oLcNHCZxF8oAQ6gwyawHM3a1JHMKk5SoW
+            xcall-program: CRZZFk3wCtT4hbZp9MNQHsDspBkVdRcPmA3TrE95VTVY
+            connection-program: 9EzyUtV8yXrmybvqTV1dwm1PTALXxm8wm3zDyHqVYsd6
             other-connections:
-                - A3A496cjPkB9jYhKAj3ET84XUmTbxTU1F6CnahftPLob
+                - 5SRimhYXGhLcbG3Kgjv1pdAGsDRy54gijQDjyG3hhzrm
             cp-nids:
                 - 0x2.icon
-            alt-address: EenoGQ1cN3H6MdELt5UaZ4UcFLBvbGw1vRmii2kCXjFo
+            alt-address: 
             nid: solana-test
             home-dir: /home/relayer/.centralized-relay
             start-tx-sign: 
