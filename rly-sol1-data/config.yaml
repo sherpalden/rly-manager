@@ -1,35 +1,35 @@
 global:
-    timeout: 10s
-    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
-    icon:
-        type: icon
-        value:
-            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
-            start-height: 0
-            address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
-            contracts:
-                connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
-                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
-            finality-block: 0
-            nid: 0x2.icon
-            disabled: false
-            step-min: 1
-            step-limit: 100000000000
-            step-adjustment: 50
-    solana:
-        type: solana
-        value:
-            disabled: false
-            rpc-url: https://api.devnet.solana.com/
-            address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
-            xcall-program: CRZZFk3wCtT4hbZp9MNQHsDspBkVdRcPmA3TrE95VTVY
-            connection-program: 9EzyUtV8yXrmybvqTV1dwm1PTALXxm8wm3zDyHqVYsd6
-            other-connections:
-                - 5SRimhYXGhLcbG3Kgjv1pdAGsDRy54gijQDjyG3hhzrm
-            cp-nids:
-                - 0x2.icon
-            alt-address: HYvv8eUJNnEzfMugCf5j8YM1EA1WCLxoTRHuoh5yvwqk
-            nid: solana-test
-            home-dir: /home/relayer/.centralized-relay
-            start-tx-sign: 
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
+      contracts:
+        connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      disabled: false
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  solana:
+    type: solana
+    value:
+      disabled: false
+      rpc-url: https://api.devnet.solana.com/
+      address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
+      xcall-program: GTQovomJUtRyo6kdfwh7PuKFQSDkS45VAymzm8Ka2jks
+      connection-program: BWruc8NzF3hnGhWEAa89rDW2hP6jFnWGUdEwqckkAfNF
+      other-connections:
+        - 4bZDtRAEQhvjRVoNdynkDBBhNBgkjHoEd2GeSNgKUhhd
+      cp-nids:
+        - 0x2.icon
+      alt-address: HYvv8eUJNnEzfMugCf5j8YM1EA1WCLxoTRHuoh5yvwqk
+      nid: solana-test
+      home-dir: /home/relayer/.centralized-relay
+      start-tx-sign:

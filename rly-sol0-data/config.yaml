@@ -1,49 +1,49 @@
 global:
-    timeout: 10s
-    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
-    icon:
-        type: icon
-        value:
-            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
-            start-height: 0
-            address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
-            contracts:
-                connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
-                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
-            finality-block: 0
-            nid: 0x2.icon
-            disabled: false
-            step-min: 1
-            step-limit: 100000000000
-            step-adjustment: 50
-    solana:
-        type: solana
-        value:
-            disabled: false
-            rpc-url: https://api.devnet.solana.com/
-            address: 7GoW5ACKgsKcjWKnfPXeGyZHMSNBJkqHFwjt5ex2i73z
-            xcall-program: CRZZFk3wCtT4hbZp9MNQHsDspBkVdRcPmA3TrE95VTVY
-            connection-program: 5SRimhYXGhLcbG3Kgjv1pdAGsDRy54gijQDjyG3hhzrm
-            other-connections:
-                - 9EzyUtV8yXrmybvqTV1dwm1PTALXxm8wm3zDyHqVYsd6
-            dapps:
-                - name: xcall_manager
-                  program-id: 2VSzwPCVwoh8vBRpQ9aZWhWES7hMX1FRqVNLZSsLQnEY
-                  config-prefix: state
-                - name: balanced_dollar
-                  program-id: 7XotVGGzAREDFjx5y6wj5A9GHdEoCfMaXa5ZMqEHR2EZ
-                  config-prefix: state
-                  other-prefix:
-                    - bnusd_authority
-                - name: asset_manager
-                  program-id: 6i4sGYbznz8ArofgAFrXNHZCzBaGPAYgaqbbXN5WUCjn
-                  config-prefix: state
-                  other-prefix:
-                    - vault_native
-            cp-nids:
-                - 0x2.icon
-            alt-address: 9zdvWRLFU19dMr6ScTDGwRuUcZBUyZgVPKvoRCgZzrqf
-            nid: solana-test
-            home-dir: /home/relayer/.centralized-relay
-            start-tx-sign: 
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
+      contracts:
+        connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      disabled: false
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  solana:
+    type: solana
+    value:
+      disabled: false
+      rpc-url: https://api.devnet.solana.com/
+      address: 7GoW5ACKgsKcjWKnfPXeGyZHMSNBJkqHFwjt5ex2i73z
+      xcall-program: GTQovomJUtRyo6kdfwh7PuKFQSDkS45VAymzm8Ka2jks
+      connection-program: 4bZDtRAEQhvjRVoNdynkDBBhNBgkjHoEd2GeSNgKUhhd
+      other-connections:
+        - BWruc8NzF3hnGhWEAa89rDW2hP6jFnWGUdEwqckkAfNF
+      dapps:
+        - name: xcall_manager
+          program-id: EbANgP45vnngbyrZFEobiuVPedCPd3uM5v6NrUWJqLeQ
+          config-prefix: state
+        - name: balanced_dollar
+          program-id: 6ZfZNQvEynjghivNC9sD7wdTdRtJ8Y1v5vTFLBZ8boye
+          config-prefix: state
+          other-prefix:
+            - bnusd_authority
+        - name: asset_manager
+          program-id: E7YLAjpEdGhuRWeMhTZ24UTjaqroaK2G37YPPHPPxUeM
+          config-prefix: state
+          other-prefix:
+            - vault_native
+      cp-nids:
+        - 0x2.icon
+      alt-address: 9zdvWRLFU19dMr6ScTDGwRuUcZBUyZgVPKvoRCgZzrqf
+      nid: solana-test
+      home-dir: /home/relayer/.centralized-relay
+      start-tx-sign:
