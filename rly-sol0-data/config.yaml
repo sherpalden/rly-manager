@@ -32,7 +32,7 @@ chains:
           program-id: EbANgP45vnngbyrZFEobiuVPedCPd3uM5v6NrUWJqLeQ
           config-prefix: state
         - name: balanced_dollar
-          program-id: 6ZfZNQvEynjghivNC9sD7wdTdRtJ8Y1v5vTFLBZ8boye
+          program-id: CYg4QTYHvAQwySKKmxvykmkzhN4nBipeHL6GpMAYtnVe
           config-prefix: state
           other-prefix:
             - bnusd_authority
