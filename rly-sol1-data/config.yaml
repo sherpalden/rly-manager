@@ -23,10 +23,10 @@ chains:
       disabled: false
       rpc-url: https://rpc.ankr.com/solana_devnet
       address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
-      xcall-program: GTQovomJUtRyo6kdfwh7PuKFQSDkS45VAymzm8Ka2jks
-      connection-program: BWruc8NzF3hnGhWEAa89rDW2hP6jFnWGUdEwqckkAfNF
+      xcall-program: BknkMw3sonNXVTW2mzuhKEJmmt4PSVei1HbQiDuWVny4
+      connection-program: 9AQweV7eGvXAq4M2UAGYmTds7vN73LH453jUwXA5Uv4q
       other-connections:
-        - 4bZDtRAEQhvjRVoNdynkDBBhNBgkjHoEd2GeSNgKUhhd
+        - Hch96XZHaSEqaX5LBiMQ9dXVJXCSexJFpMMX5s6mS7ad
       cp-nids:
         - 0x2.icon
       alt-address: HYvv8eUJNnEzfMugCf5j8YM1EA1WCLxoTRHuoh5yvwqk
