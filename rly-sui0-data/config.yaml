@@ -1,70 +1,89 @@
 global:
-    timeout: 10s
-    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
-    icon:
-        type: icon
-        value:
-            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
-            start-height: 0
-            address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
-            contracts:
-                connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
-                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
-            finality-block: 0
-            nid: 0x2.icon
-            disabled: false
-            step-min: 1
-            step-limit: 100000000000
-            step-adjustment: 50
-    sui:
-        type: sui
-        value:
-            chain-id: ""
-            rpc-url: https://rpc.ankr.com/sui_testnet
-            address: 0x07304a5d7d1a4763a1cea91f478d24e40aecf1fdbd2f14764d5ad745f4904f85
-            nid: sui-test
-            xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
-            xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
-            connection-id: centralized-1
-            connection-cap-id: 0x5e633b8baf655f4986a5d4b131ec316e8a9964108fd968c507c546cd92f78c27
-            dapps:
-                - package-id: 0x223fab445ca35ed1add4b07d416ac2a0919faf5152b9ff0f19b10d98e5060503
-                  constants:
-                    clock: "0x6"
-                  modules:
-                    - name: spoke_token
-                      cap-id: 0x975b1a200e2715ae158b05bfba25706c270cc9df986f399f76cbd678252064fc
-                      config-id: 0x9472a3a4537978b788ff1c1ec869c3b1184fca5a2323246b531c06a6694f7c6a
-                - package-id: 0x6e7ede3b3a5f6297400c95829a71339609c303d1f38fb7f139e1612aef3d3e19
-                  constants:
-                    clock: "0x6"
-                  modules:
-                    - name: spoke_manager
-                      cap-id: 0x5cda951a79d3d5738ab350d0f62c2cace1b0637c31f1d9f51dc5a65e0aa82bde
-                      config-id: 0x330777cea107914b3adaa07feb3f928f88491a80ff140f0249ba4b7f7c345e14
-                - package-id: 0x271fe2081b77cc53b87f4bff094407e8c42dfa356ccb37f59e722259fa06dd85
-                  constants:
-                    clock: "0x6"
-                  modules:
-                    - name: xcall_manager
-                      cap-id: 0xafa02d4592affcb14285a5dfd585ef5b47ad7ad68b4bbdcb659342915f8dd982
-                      config-id: 0x1b8071a73e61a4b60e026875061311e9f9146d89ceb1120c35519f8e4dc47b2f
-                    - name: asset_manager
-                      cap-id: 0x0d7e657ed9e5494dccd2abcfec849d471bc43716a03a7b48b78bdc906b55535d
-                      config-id: 0x323451f3f9526a54469f3d1db25d384dc5d9d20b63ad0db0bb42d62e0a0bf154
-                    - name: balanced_dollar_crosschain
-                      cap-id: 0xb3ffbef01bb8d5067ee36f2ddafac049ae62b7d4f70c349c9bb579b9a271e942
-                      config-id: 0x1ecad1dfd5c22849414ba2f68113cc182a93ff01d9901c4800d0168ffd6e0cf5
-                - package-id: 0x5c582c88929cc177e7409dcc26e2c3e41502e4eec2c900b91ce1776dd0e87960
-                  constants:
-                    clock: "0x6"
-                  modules:
-                    - name: mock_dapp
-                      cap-id: 0x8f00fd59513fbe2af9bb275caa516a04e9172a7ae0de1b82821adb6a26dfdd32
-                      config-id: 0xc3e007c8e2bfba62a150867d8de5e9557a3a31ba675409ee437ce9f9dcd08a31
-            home-dir: /home/relayer/.centralized-relay
-            gas-limit: 5000000
-            disabled: false
-            start-tx-digest: ""
-            poll-interval: 6s
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
+      contracts:
+        connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      disabled: false
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  sui:
+    type: sui
+    value:
+      chain-id: ""
+      rpc-url: https://rpc.ankr.com/sui_testnet
+      address: 0x07304a5d7d1a4763a1cea91f478d24e40aecf1fdbd2f14764d5ad745f4904f85
+      nid: sui-test
+      xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
+      xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
+      connection-id: centralized-1
+      connection-cap-id: 0x5e633b8baf655f4986a5d4b131ec316e8a9964108fd968c507c546cd92f78c27
+      dapps:
+        - package-id: 0x5f5ad312e5e9dc052e0ee2156a46dcef54d10a52b7ec90012931ced8b60c29d8
+          constants:
+            clock: "0x6"
+          modules:
+            - name: asset_manager
+              cap-id: 0xe2e52ed7bea19530249517293a0c3f51df2c4ba104b8cfa0d1fad5b64d9c81f6
+              config-id: 0x408fd9d1a3a31b075c955ad7210ad01f7a20aeb4f4dd908400483a799ef2fd24
+            - name: balanced_dollar
+              cap-id: 0xd58b6fac55a532caa61526a7767d9f8ec2ae30b111168d5caa3e4c17dbc56ff5
+              config-id: 0x1a4e4c9ae86603caf275a122130f2a91b162ca0e059043b88e49977a62ff4faf
+            - name: balanced_token
+              cap-id: 0xcf4fa2d5b81587b6516c77c54dcb606853ba8e944a9ddaa7004842d4e785f67a
+              config-id: 0xc0f8ddbc50690de0e728ba96979acb6fd46d3be1af002b2dc07b073320180442
+            - name: sicx
+              cap-id: 0xe2b431433042c16af9e46876d44ee52e86bc8c12dc2205280a2c26c4e88a316f
+              config-id: 0xec59682413627d3b2b7a28d4c6e624eb4ac231c4174a1cca8119ad1b9d7a431d
+            - name: xcall_manager
+              cap-id: 0xf5a1818a7d79e9a3972366fd35d23eb43cae5d8c810bec9b48c9a993bf77ef09
+              config-id: 0x1ba6eae4f05cb25cdb22ae9623242ae5674c246a4f56f16843ff983a7d5be684
+        - package-id: 0x223fab445ca35ed1add4b07d416ac2a0919faf5152b9ff0f19b10d98e5060503
+          constants:
+            clock: "0x6"
+          modules:
+            - name: spoke_token
+              cap-id: 0x975b1a200e2715ae158b05bfba25706c270cc9df986f399f76cbd678252064fc
+              config-id: 0x9472a3a4537978b788ff1c1ec869c3b1184fca5a2323246b531c06a6694f7c6a
+        - package-id: 0x6e7ede3b3a5f6297400c95829a71339609c303d1f38fb7f139e1612aef3d3e19
+          constants:
+            clock: "0x6"
+          modules:
+            - name: spoke_manager
+              cap-id: 0x5cda951a79d3d5738ab350d0f62c2cace1b0637c31f1d9f51dc5a65e0aa82bde
+              config-id: 0x330777cea107914b3adaa07feb3f928f88491a80ff140f0249ba4b7f7c345e14
+        - package-id: 0x271fe2081b77cc53b87f4bff094407e8c42dfa356ccb37f59e722259fa06dd85
+          constants:
+            clock: "0x6"
+          modules:
+            - name: xcall_manager
+              cap-id: 0xafa02d4592affcb14285a5dfd585ef5b47ad7ad68b4bbdcb659342915f8dd982
+              config-id: 0x1b8071a73e61a4b60e026875061311e9f9146d89ceb1120c35519f8e4dc47b2f
+            - name: asset_manager
+              cap-id: 0x0d7e657ed9e5494dccd2abcfec849d471bc43716a03a7b48b78bdc906b55535d
+              config-id: 0x323451f3f9526a54469f3d1db25d384dc5d9d20b63ad0db0bb42d62e0a0bf154
+            - name: balanced_dollar_crosschain
+              cap-id: 0xb3ffbef01bb8d5067ee36f2ddafac049ae62b7d4f70c349c9bb579b9a271e942
+              config-id: 0x1ecad1dfd5c22849414ba2f68113cc182a93ff01d9901c4800d0168ffd6e0cf5
+        - package-id: 0x5c582c88929cc177e7409dcc26e2c3e41502e4eec2c900b91ce1776dd0e87960
+          constants:
+            clock: "0x6"
+          modules:
+            - name: mock_dapp
+              cap-id: 0x8f00fd59513fbe2af9bb275caa516a04e9172a7ae0de1b82821adb6a26dfdd32
+              config-id: 0xc3e007c8e2bfba62a150867d8de5e9557a3a31ba675409ee437ce9f9dcd08a31
+      home-dir: /home/relayer/.centralized-relay
+      gas-limit: 5000000
+      disabled: false
+      start-tx-digest: ""
+      poll-interval: 6s
