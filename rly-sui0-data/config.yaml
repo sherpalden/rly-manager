@@ -62,19 +62,19 @@ chains:
             - name: spoke_manager
               cap-id: 0x5cda951a79d3d5738ab350d0f62c2cace1b0637c31f1d9f51dc5a65e0aa82bde
               config-id: 0x330777cea107914b3adaa07feb3f928f88491a80ff140f0249ba4b7f7c345e14
-        # - package-id: 0x271fe2081b77cc53b87f4bff094407e8c42dfa356ccb37f59e722259fa06dd85
-        #   constants:
-        #     clock: "0x6"
-        #   modules:
-        #     - name: xcall_manager
-        #       cap-id: 0xafa02d4592affcb14285a5dfd585ef5b47ad7ad68b4bbdcb659342915f8dd982
-        #       config-id: 0x1b8071a73e61a4b60e026875061311e9f9146d89ceb1120c35519f8e4dc47b2f
-        #     - name: asset_manager
-        #       cap-id: 0x0d7e657ed9e5494dccd2abcfec849d471bc43716a03a7b48b78bdc906b55535d
-        #       config-id: 0x323451f3f9526a54469f3d1db25d384dc5d9d20b63ad0db0bb42d62e0a0bf154
-        #     - name: balanced_dollar_crosschain
-        #       cap-id: 0xb3ffbef01bb8d5067ee36f2ddafac049ae62b7d4f70c349c9bb579b9a271e942
-        #       config-id: 0x1ecad1dfd5c22849414ba2f68113cc182a93ff01d9901c4800d0168ffd6e0cf5
+        - package-id: 0x271fe2081b77cc53b87f4bff094407e8c42dfa356ccb37f59e722259fa06dd85
+          constants:
+            clock: "0x6"
+          modules:
+            - name: xcall_manager
+              cap-id: 0xafa02d4592affcb14285a5dfd585ef5b47ad7ad68b4bbdcb659342915f8dd982
+              config-id: 0x1b8071a73e61a4b60e026875061311e9f9146d89ceb1120c35519f8e4dc47b2f
+            - name: asset_manager
+              cap-id: 0x0d7e657ed9e5494dccd2abcfec849d471bc43716a03a7b48b78bdc906b55535d
+              config-id: 0x323451f3f9526a54469f3d1db25d384dc5d9d20b63ad0db0bb42d62e0a0bf154
+            - name: balanced_dollar_crosschain
+              cap-id: 0xb3ffbef01bb8d5067ee36f2ddafac049ae62b7d4f70c349c9bb579b9a271e942
+              config-id: 0x1ecad1dfd5c22849414ba2f68113cc182a93ff01d9901c4800d0168ffd6e0cf5
         - package-id: 0x5c582c88929cc177e7409dcc26e2c3e41502e4eec2c900b91ce1776dd0e87960
           constants:
             clock: "0x6"
