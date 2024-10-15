@@ -47,3 +47,4 @@ chains:
       nid: solana-test
       home-dir: /home/relayer/.centralized-relay
       start-tx-sign:
+      tx-confirmation-time: 1s
