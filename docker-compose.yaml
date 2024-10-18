@@ -10,7 +10,7 @@ services:
       - 4699:8080
 
   rly-sol0:
-    image: centralized-relay-sol:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-sol0-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
@@ -22,7 +22,7 @@ services:
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-sol1:
-    image: centralized-relay-sol:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-sol1-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
@@ -34,7 +34,7 @@ services:
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-sui0:
-    image: centralized-relay-sui:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-sui0-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
@@ -46,7 +46,7 @@ services:
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-sui1:
-    image: centralized-relay-sui:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-sui1-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
@@ -58,7 +58,7 @@ services:
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-stellar0:
-    image: centralized-relay-stellar:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-stellar0-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
@@ -70,7 +70,7 @@ services:
     entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
 
   rly-stellar1:
-    image: centralized-relay-stellar:latest
+    image: centralized-relay:latest
     volumes:
       - ./rly-stellar1-data:/home/relayer/.centralized-relay
       - ./.aws:/home/relayer/.aws
