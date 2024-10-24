@@ -26,7 +26,7 @@ chains:
       nid: sui-test
       xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
       xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
-      connection-module: main
+      connection-module: centralized_entry
       connection-id: centralized-2
       connection-cap-id: 0x7def1055adcc2c9928ee7640e2d35e2f091a8e6a897fee52f508efcff71bce22
       dapps: []
