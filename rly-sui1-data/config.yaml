@@ -1,36 +1,37 @@
 global:
-    timeout: 10s
-    kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
-    icon:
-        type: icon
-        value:
-            rpc-url: https://lisbon.net.solidwallet.io/api/v3/
-            start-height: 0
-            address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
-            contracts:
-                connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
-                xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
-            finality-block: 0
-            nid: 0x2.icon
-            disabled: false
-            step-min: 1
-            step-limit: 100000000000
-            step-adjustment: 50
-    sui:
-        type: sui
-        value:
-            chain-id: ""
-            rpc-url: https://rpc.ankr.com/sui_testnet
-            address: 0x5d6756d9d540d7fc52c7e882265c86e516e8e0d744c4bedf0786065568327e40
-            nid: sui-test
-            xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
-            xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
-            connection-id: centralized-2
-            connection-cap-id: 0x7def1055adcc2c9928ee7640e2d35e2f091a8e6a897fee52f508efcff71bce22
-            dapps: []
-            home-dir: /home/relayer/.centralized-relay
-            gas-limit: 5000000
-            disabled: false
-            start-tx-digest: ""
-            poll-interval: 6s
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
+      contracts:
+        connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      disabled: false
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  sui:
+    type: sui
+    value:
+      chain-id: ""
+      rpc-url: https://rpc.ankr.com/sui_testnet
+      address: 0x5d6756d9d540d7fc52c7e882265c86e516e8e0d744c4bedf0786065568327e40
+      nid: sui-test
+      xcall-package-id: 0x8c5242ae42c53bdb92c94123184e72429283969772ec6e12e6f086bd673960b7
+      xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
+      connection-module: main
+      connection-id: centralized-2
+      connection-cap-id: 0x7def1055adcc2c9928ee7640e2d35e2f091a8e6a897fee52f508efcff71bce22
+      dapps: []
+      home-dir: /home/relayer/.centralized-relay
+      gas-limit: 5000000
+      disabled: false
+      start-tx-digest: ""
+      poll-interval: 6s
