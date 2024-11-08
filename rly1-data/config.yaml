@@ -17,6 +17,36 @@ chains:
       step-min: 1
       step-limit: 100000000000
       step-adjustment: 50
+  solana:
+    type: solana
+    value:
+      disabled: false
+      rpc-url: https://rpc.ankr.com/solana_devnet
+      address: 7Fn9wQNv7E3UKJsdytMSQSKbpu8GVwRfBGDhr2ZYdAme
+      xcall-program: BknkMw3sonNXVTW2mzuhKEJmmt4PSVei1HbQiDuWVny4
+      connection-program: 9AQweV7eGvXAq4M2UAGYmTds7vN73LH453jUwXA5Uv4q
+      other-connections:
+        - Hch96XZHaSEqaX5LBiMQ9dXVJXCSexJFpMMX5s6mS7ad
+      cp-nids:
+        - 0x2.icon
+      alt-address: HYvv8eUJNnEzfMugCf5j8YM1EA1WCLxoTRHuoh5yvwqk
+      nid: solana-test
+      home-dir: /home/relayer/.centralized-relay
+      start-tx-sign:
+  stellar:
+    type: stellar
+    value:
+      disabled: false
+      nid: stellar-test
+      soroban-url: https://soroban-testnet.stellar.org/
+      horizon-url: https://horizon-testnet.stellar.org/
+      address: GA77PVPU6CB32XVGFP2BKFSHKG4HUWWF2IKLB6FOFFSWOS4VHEIKSOT6
+      contracts:
+        connection: CB7XOLRD5ZO5XO2LGCECMBN7YZVW3EGY7EL7CUDWPBP3DYTQ4HCFQFW5
+      max-inclusion-fee: 100000
+      block-interval: 5s
+      network-passphrase: Test SDF Network ; September 2015
+      start-height: 0
   sui:
     type: sui
     value:

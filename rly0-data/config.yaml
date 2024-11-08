@@ -2,6 +2,20 @@ global:
   timeout: 10s
   kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
+  # avalanche:
+  #   type: evm
+  #   value:
+  #     rpc-url: https://api.avax-test.network/ext/bc/C/rpc
+  #     websocket-url: wss://ws-nd-507-756-317.p2pify.com/b01d81c64a3b7454f7a40a20ef44a1ce/ext/bc/C/ws
+  #     start-height: 0
+  #     address: 0xb89cd0fd9043e5e8144c501b54303b7e8a65be02
+  #     gas-price: 0
+  #     gas-limit: 100056000
+  #     contracts:
+  #       connection: 0x6a300085417f34CBA810dB64bD3D483Ff711aC6a
+  #     nid: 0xa869.fuji
+  #     finality-block: 10
+  #     block-interval: 2s
   icon:
     type: icon
     value:
@@ -17,6 +31,52 @@ chains:
       step-min: 1
       step-limit: 100000000000
       step-adjustment: 50
+  solana:
+    type: solana
+    value:
+      disabled: false
+      rpc-url: https://rpc.ankr.com/solana_devnet
+      address: 7GoW5ACKgsKcjWKnfPXeGyZHMSNBJkqHFwjt5ex2i73z
+      xcall-program: BknkMw3sonNXVTW2mzuhKEJmmt4PSVei1HbQiDuWVny4
+      connection-program: Hch96XZHaSEqaX5LBiMQ9dXVJXCSexJFpMMX5s6mS7ad
+      other-connections:
+        - 9AQweV7eGvXAq4M2UAGYmTds7vN73LH453jUwXA5Uv4q
+      dapps:
+        - name: xcall_manager
+          program-id: 4eAQxDi6UJokDysb9YMrXNJNcRChotpYory5M5ReD16i
+          config-prefix: state
+        - name: balanced_dollar
+          program-id: Ahs9cC6PMGhasB5zUboUVNBJxAStmX1aeENDiWLz2AXH
+          config-prefix: state
+          other-prefix:
+            - bnusd_authority
+        - name: asset_manager
+          program-id: 5G7Q2xM5qU4UWd3z4CW9YSEiVnfZmTUS1mbhSSZwTEJQ
+          config-prefix: state
+          other-prefix:
+            - vault_native
+      cp-nids:
+        - 0x2.icon
+      alt-address: 9zdvWRLFU19dMr6ScTDGwRuUcZBUyZgVPKvoRCgZzrqf
+      nid: solana-test
+      home-dir: /home/relayer/.centralized-relay
+      start-tx-sign:
+      tx-confirmation-time: 1s
+  stellar:
+    type: stellar
+    value:
+      disabled: false
+      nid: stellar-test
+      soroban-url: https://soroban-testnet.stellar.org/
+      horizon-url: https://horizon-testnet.stellar.org/
+      address: GCQ5YPTO5ORNZ7WMADFAWP2D7NOJBZGDLWAUYNMSNLIHRNMSJXXFFWE3
+      contracts:
+        connection: CC3DLZGJTICOTAXHGC4JNSR3IWARLRYJJTZONVOTDS3G2K35REFHITOH
+        xcall: CCBML52W3LR4OGKB7F5RJCADHET6QV3MX6PKWPFPWZVGCZSS6XZXMQIP
+      max-inclusion-fee: 100000
+      block-interval: 5s
+      network-passphrase: Test SDF Network ; September 2015
+      start-height: 0
   sui:
     type: sui
     value:
