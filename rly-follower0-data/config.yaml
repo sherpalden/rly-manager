@@ -1,0 +1,44 @@
+global:
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  cluster-mode:
+    enabled: true
+    key: 041026c84e411f8690a6ee46ffbe38dde022e53ffd8b3146daa2ae5fea21658ae8488f0d90358b6050ff014ed864ed785808f0016e8f130360095ec43ce03d77fc
+chains:
+  avalanche:
+    type: evm
+    value:
+      rpc-url: https://api.avax-test.network/ext/bc/C/rpc
+      start-height: 0
+      address: 0xb89cd0fd9043e5e8144c501b54303b7e8a65be02
+      contracts:
+        connection: 0x0789F14b511292DE6A5b63304f41854e4d188Bd6
+        # xcall: 0x28ecb198e86a7FcA1cf51032635967fc26cDDAaD
+      finality-block: 10
+      nid: 0xa869.fuji
+      decimals: 18
+      disabled: true
+      cluster-mode: true
+      websocket-url: wss://ws-nd-507-756-317.p2pify.com/b01d81c64a3b7454f7a40a20ef44a1ce/ext/bc/C/ws
+      gas-min: 0
+      gas-limit: 100056000
+      gas-adjustment: 50
+      block-batch-size: 50
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hx46368159fae7383536655a7eb095a793e0e81fd2
+      contracts:
+        aggregation: cx89b8b5c95c4ff38e83ed15374caf854dca0c51d4
+        # connection: cxdccc9298c4cfd0b505c50b6ec1bc111bd442d080
+        # xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      decimals: 18
+      disabled: false
+      cluster-mode: true
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
