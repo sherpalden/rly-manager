@@ -42,3 +42,30 @@ chains:
       step-min: 1
       step-limit: 100000000000
       step-adjustment: 50
+  archway:
+    type: cosmos
+    value:
+      rpc-url: https://rpc.constantine.archway.io:443
+      start-height: 0
+      address: archway12rer5x4l2sssmz5smv6mjvpz2qwnx4s2t2lr5a
+      contracts:
+        connection: archway1dq3g9k26dcnzxyp236t0nan7nt9jp82hzdjc43naxchkuz6g9z6s8x33f4
+      finality-block: 0
+      nid: archway
+      decimals: 18
+      disabled: true
+      grpc-url: grpc.constantine.archway.io:443
+      keyring-backend: memory
+      keyring-dir: /Users/sherpalden/.centralized-relay/archway
+      account-prefix: archway
+      denomination: aconst
+      gas-prices: 900000000000aconst
+      gas-adjustment: 1.5
+      min-gas-amount: 20000
+      max-gas-amount: 4000000
+      tx-confirmation-interval: 5s
+      broadcast-mode: sync
+      sign-mode: SIGN_MODE_DIRECT
+      simulate: true
+      extra-codecs: ""
+      block-batch-size: 50
