@@ -13,7 +13,7 @@ services:
     image: centralized-relay:cluster
     volumes:
       - ./rly-leader-data:/home/relayer/.centralized-relay
-      # - ./rly-cluster-keys/leader:/home/relayer/.centralized-relay/keystore/cluster
+      - ./rly-cluster-keys/leader:/home/relayer/.centralized-relay/keystore/cluster
       - ./.aws:/home/relayer/.aws
       - ./wallets:/home/relayer/wallets
 
@@ -27,7 +27,7 @@ services:
     image: centralized-relay:cluster
     volumes:
       - ./rly-follower0-data:/home/relayer/.centralized-relay
-      # - ./rly-cluster-keys/follower0:/home/relayer/.centralized-relay/keystore/cluster
+      - ./rly-cluster-keys/follower0:/home/relayer/.centralized-relay/keystore/cluster
       - ./.aws:/home/relayer/.aws
       - ./wallets:/home/relayer/wallets
     environment:
