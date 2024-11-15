@@ -10,7 +10,7 @@ chains:
       address: hxcd808d9a16234ef3419d19b422dfe61d3a93aeb2
       contracts:
         connection: cx81520d8d497651f2c050c4a10aaf51176f37230d
-        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+        # xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
       finality-block: 0
       nid: 0x2.icon
       disabled: false
