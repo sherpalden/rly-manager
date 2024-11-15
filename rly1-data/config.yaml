@@ -32,7 +32,7 @@ chains:
       alt-address: HYvv8eUJNnEzfMugCf5j8YM1EA1WCLxoTRHuoh5yvwqk
       nid: solana-test
       home-dir: /home/relayer/.centralized-relay
-      start-tx-sign: 3edqFDk3q6q5swvuc13gW1FMxG7Cy7Bwxc6SPQN7WkYG54V7Ev1A5kUnSjJGgH23eyvVxuApXkfeH7sN7Dr2UbZM
+      start-tx-sign:
   stellar:
     type: stellar
     value:
@@ -63,5 +63,5 @@ chains:
       home-dir: /home/relayer/.centralized-relay
       gas-limit: 5000000
       disabled: false
-      start-tx-digest: 7FkoscGgm79nRbpHHETh81u4ZxVfH6X5yjw8wRVxiroa
+      start-tx-digest:
       poll-interval: 6s
