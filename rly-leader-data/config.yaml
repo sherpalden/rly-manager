@@ -1,9 +1,9 @@
 global:
   timeout: 10s
   kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
-  cluster-mode:
-    enabled: true
-    key: 046bc928ee4932efd619ec4c00e0591e932cf2cfef13a59f6027da1c6cba36b35d91238b54aece19825025a9c7cb0bc58a60d5c49e7fc8e5b39fcc4c2193f5feb2
+  # cluster-mode:
+  #   enabled: true
+  #   key: 046bc928ee4932efd619ec4c00e0591e932cf2cfef13a59f6027da1c6cba36b35d91238b54aece19825025a9c7cb0bc58a60d5c49e7fc8e5b39fcc4c2193f5feb2
 chains:
   avalanche:
     type: evm
