@@ -1,0 +1,69 @@
+global:
+  timeout: 10s
+  kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
+  cluster-mode:
+    enabled: true
+chains:
+  avalanche:
+    type: evm
+    value:
+      rpc-url: https://api.avax-test.network/ext/bc/C/rpc
+      start-height: 0
+      address:
+      contracts:
+        connection: 0x0789F14b511292DE6A5b63304f41854e4d188Bd6
+      finality-block: 10
+      nid: 0xa869.fuji
+      decimals: 18
+      disabled: true
+      cluster-mode: true
+      websocket-url: wss://ws-nd-507-756-317.p2pify.com/b01d81c64a3b7454f7a40a20ef44a1ce/ext/bc/C/ws
+      gas-min: 0
+      gas-limit: 100056000
+      gas-adjustment: 50
+      block-batch-size: 50
+  icon:
+    type: icon
+    value:
+      rpc-url: https://lisbon.net.solidwallet.io/api/v3/
+      start-height: 0
+      address: hxaca3b8ce6df4f9480e787e8ab95314fc155b3e72
+      contracts:
+        aggregation: cx89b8b5c95c4ff38e83ed15374caf854dca0c51d4
+        # connection: cxdccc9298c4cfd0b505c50b6ec1bc111bd442d080
+        # xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+      finality-block: 0
+      nid: 0x2.icon
+      decimals: 18
+      disabled: false
+      cluster-mode: true
+      step-min: 1
+      step-limit: 100000000000
+      step-adjustment: 50
+  archway:
+    type: cosmos
+    value:
+      rpc-url: https://rpc.constantine.archway.io:443
+      start-height: 0
+      address:
+      contracts:
+        connection: archway1dq3g9k26dcnzxyp236t0nan7nt9jp82hzdjc43naxchkuz6g9z6s8x33f4
+      finality-block: 0
+      nid: archway
+      decimals: 18
+      disabled: true
+      grpc-url: grpc.constantine.archway.io:443
+      keyring-backend: memory
+      keyring-dir: /Users/sherpalden/.centralized-relay/archway
+      account-prefix: archway
+      denomination: aconst
+      gas-prices: 900000000000aconst
+      gas-adjustment: 1.5
+      min-gas-amount: 20000
+      max-gas-amount: 4000000
+      tx-confirmation-interval: 5s
+      broadcast-mode: sync
+      sign-mode: SIGN_MODE_DIRECT
+      simulate: true
+      extra-codecs: ""
+      block-batch-size: 50
