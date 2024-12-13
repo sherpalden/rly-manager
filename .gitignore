@@ -1,3 +1,8 @@
 kms-data/
 rly-*-data/data/
 rly-*-data/keystore/
+rly0-data/data
+rly0-data/keystore
+rly1-data/data
+rly1-data/keystore
+rly-cluster-keys/
