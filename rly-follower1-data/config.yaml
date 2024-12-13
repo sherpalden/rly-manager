@@ -40,6 +40,20 @@ chains:
       step-min: 1
       step-limit: 100000000000
       step-adjustment: 50
+  stellar:
+    type: stellar
+    value:
+      disabled: true
+      nid: stellar-test
+      soroban-url: https://rpc.ankr.com/stellar_testnet_soroban/98af665db4f1c6be2ed8ce7d8caed10aade053c5bd7880844d8806b0eada8317
+      horizon-url: https://rpc.ankr.com/premium-http/stellar_testnet_horizon/98af665db4f1c6be2ed8ce7d8caed10aade053c5bd7880844d8806b0eada8317
+      address:
+      contracts:
+        connection: CABCT3EBRZDTCBY5W2CHAMLF4GWU6RJSAV2QIV6LFTLQU7RLWX7T6VWN
+      max-inclusion-fee: 100000
+      block-interval: 5s
+      network-passphrase: Test SDF Network ; September 2015
+      start-height: 0
   archway:
     type: cosmos
     value:
