@@ -1,5 +1,2 @@
-cluster/data/
-cluster/kms/data
-
-crly/data/
-crly/kms/data
+.data
+kms/data
