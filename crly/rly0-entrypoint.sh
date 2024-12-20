@@ -6,6 +6,8 @@ AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain 0x2.i
 AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain sui-test --keystore /home/relayer/wallets/sui-0.json --password password
 AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain solana-test --keystore /home/relayer/wallets/solana-0.json --password password
 AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain stellar-test --keystore /home/relayer/wallets/stellar-0 --password password
+AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain archway --keystore /home/relayer/wallets/archway-0 --password password
+AWS_ENDPOINT_URL=http://kms:8080 centralized-relay keystore import --chain 0xa869.fuji --keystore /home/relayer/wallets/evm-0.json --password password
 sleep 3
 echo 'Starting relayer...'
 AWS_ENDPOINT_URL=http://kms:8080 centralized-relay start

@@ -1,0 +1,65 @@
+version: "3.8"
+
+services:
+  kms:
+    container_name: cluster-kms
+    image: nsmithuk/local-kms
+    volumes:
+      - ./kms/data:/data
+      - ./kms/init:/init
+    ports:
+      - 4699:8080
+
+  leader:
+    container_name: leader
+    image: centralized-relay:cluster
+    volumes:
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+      - ./data/leader/data:/home/relayer/.centralized-relay/data
+      - ./data/leader/keystore:/home/relayer/.centralized-relay/keystore
+      - ./keys/leader:/home/relayer/.centralized-relay/keystore/cluster
+      - ./leader-config.yaml:/home/relayer/.centralized-relay/config.yaml
+      - ./leader-entrypoint.sh:/home/relayer/.centralized-relay/entrypoint.sh
+
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
+
+  follower0:
+    container_name: follower0
+    image: centralized-relay:cluster
+    volumes:
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+      - ./data/follower0/data:/home/relayer/.centralized-relay/data
+      - ./data/follower0/keystore:/home/relayer/.centralized-relay/keystore
+      - ./keys/follower0:/home/relayer/.centralized-relay/keystore/cluster
+      - ./follower0-config.yaml:/home/relayer/.centralized-relay/config.yaml
+      - ./follower0-entrypoint.sh:/home/relayer/.centralized-relay/entrypoint.sh
+
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh
+
+  follower1:
+    container_name: follower1
+    image: centralized-relay:cluster
+    volumes:
+      - ./.aws:/home/relayer/.aws
+      - ./wallets:/home/relayer/wallets
+      - ./data/follower1/data:/home/relayer/.centralized-relay/data
+      - ./data/follower1/keystore:/home/relayer/.centralized-relay/keystore
+      - ./keys/follower1:/home/relayer/.centralized-relay/keystore/cluster
+      - ./follower1-config.yaml:/home/relayer/.centralized-relay/config.yaml
+      - ./follower1-entrypoint.sh:/home/relayer/.centralized-relay/entrypoint.sh
+
+    environment:
+      - AWS_ENDPOINT_URL=http://kms:8080
+    depends_on:
+      - kms
+    entrypoint: /home/relayer/.centralized-relay/entrypoint.sh

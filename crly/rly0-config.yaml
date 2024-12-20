@@ -2,20 +2,47 @@ global:
   timeout: 10s
   kms-key-id: 5ef77041-d1e6-4af1-9a41-e49a4b45efb6
 chains:
-  # avalanche:
-  #   type: evm
-  #   value:
-  #     rpc-url: https://api.avax-test.network/ext/bc/C/rpc
-  #     websocket-url: wss://ws-nd-507-756-317.p2pify.com/b01d81c64a3b7454f7a40a20ef44a1ce/ext/bc/C/ws
-  #     start-height: 0
-  #     address: 0xb89cd0fd9043e5e8144c501b54303b7e8a65be02
-  #     gas-price: 0
-  #     gas-limit: 100056000
-  #     contracts:
-  #       connection: 0x6a300085417f34CBA810dB64bD3D483Ff711aC6a
-  #     nid: 0xa869.fuji
-  #     finality-block: 10
-  #     block-interval: 2s
+  avalanche:
+    type: evm
+    value:
+      rpc-url: https://api.avax-test.network/ext/bc/C/rpc
+      websocket-url: wss://ws-nd-507-756-317.p2pify.com/b01d81c64a3b7454f7a40a20ef44a1ce/ext/bc/C/ws
+      start-height: 0
+      address: 0xb89cd0fd9043e5e8144c501b54303b7e8a65be02
+      gas-price: 0
+      gas-limit: 100056000
+      contracts:
+        connection: 0x7C19DdAd1eFC47123BdE31231b699c677fFDD215
+      nid: 0xa869.fuji
+      finality-block: 10
+      block-interval: 2s
+  archway:
+    type: cosmos
+    value:
+      rpc-url: https://rpc.constantine.archway.io:443
+      start-height: 0
+      address: archway1mzgucqnfr2l8cj5apvdpllhzt4zeuh2c9u7svt
+      contracts:
+        connection: archway1gpe6e9frcss2mvx3ary95z7ycd77um032new4m2qlkcm9zpjg3csfcy4uw
+        xcall: archway1h04c8eqr99dnsw6wqx80juj2vtuxth70eh65cf6pnj4zan6ms4jqshc5wk
+      finality-block: 0
+      nid: archway
+      decimals: 18
+      disabled: false
+      grpc-url: grpc.constantine.archway.io:443
+      keyring-backend: memory
+      account-prefix: archway
+      denomination: aconst
+      gas-prices: 900000000000aconst
+      gas-adjustment: 1.5
+      min-gas-amount: 20000
+      max-gas-amount: 4000000
+      tx-confirmation-interval: 5s
+      broadcast-mode: sync
+      sign-mode: SIGN_MODE_DIRECT
+      simulate: true
+      extra-codecs: ""
+      block-batch-size: 50
   icon:
     type: icon
     value:
@@ -24,7 +51,7 @@ chains:
       address: hxd9967431c2b3dc39e4275460280eaa050a834c0d
       contracts:
         connection: cxcfdc270edd2a1f10036fa12a2ab1da4fb1262963
-        # xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
+        xcall: cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83
       finality-block: 0
       nid: 0x2.icon
       disabled: false
@@ -60,7 +87,7 @@ chains:
       alt-address: 9zdvWRLFU19dMr6ScTDGwRuUcZBUyZgVPKvoRCgZzrqf
       nid: solana-test
       home-dir: /home/relayer/.centralized-relay
-      start-tx-sign: 2q1Lb5rCigXxvux19KnGHjkBohnAtboP1mWCHVUF4HWFgM7qwGAo53ZU2zpKkueNDGaQRrgbZkvWqyq9iWbdrmuo
+      start-tx-sign:
       tx-confirmation-time: 1s
   stellar:
     type: stellar
@@ -146,5 +173,5 @@ chains:
       home-dir: /home/relayer/.centralized-relay
       gas-limit: 5000000
       disabled: false
-      start-tx-digest: 3E7ca1ZYn3Q9DJn1SHRqNEUQZX4fCNxkzyn1MzvAeAWo
+      start-tx-digest:
       poll-interval: 6s
