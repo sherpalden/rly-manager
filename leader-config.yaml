@@ -85,3 +85,64 @@ chains:
       simulate: true
       extra-codecs: ""
       block-batch-size: 50
+
+  solana:
+    type: solana
+    value:
+      disabled: false
+      rpc-url: https://rpc.ankr.com/solana_devnet
+      address: 7qx1U39XneecHWMPPY172rtTcEBDRH7t9Cb4TNTwkAZm
+      xcall-program: BknkMw3sonNXVTW2mzuhKEJmmt4PSVei1HbQiDuWVny4
+      connection-program: DR7DDmazQVpJSGxLSiAQZcwQD9HpB2yHghBmn5Skad4C
+      other-connections:
+      dapps:
+        - name: xcall_manager
+          program-id: 4eAQxDi6UJokDysb9YMrXNJNcRChotpYory5M5ReD16i
+          config-prefix: state
+        - name: balanced_dollar
+          program-id: Ahs9cC6PMGhasB5zUboUVNBJxAStmX1aeENDiWLz2AXH
+          config-prefix: state
+          other-prefix:
+            - bnusd_authority
+        - name: asset_manager
+          program-id: 5G7Q2xM5qU4UWd3z4CW9YSEiVnfZmTUS1mbhSSZwTEJQ
+          config-prefix: state
+          other-prefix:
+            - vault_native
+      cp-nids:
+        - 0x2.icon
+      alt-address: 4BFCep44Zdbvoo4tmnUwQgjU5gdk8fXeEfshYP85A14n
+      nid: solana-test
+      home-dir: /home/relayer/.centralized-relay
+      start-tx-sign:
+      tx-confirmation-time: 1s
+
+  sui:
+    type: sui
+    value:
+      rpc-url: https://rpc.ankr.com/sui_testnet
+      address: 0x675b6d9e32904ecc705fc17201111f3637b5dcb69f8be35d3ce49a7161de6548
+      nid: sui-test
+      xcall-package-id: 0xff60814fac7930b9890fc6582efa0e02e72956584d18adef77d23ed4643325bd
+      xcall-storage-id: 0x60add4475c91742470074396ba29b6d62572abd1ac08c18abe228be949c21420
+      connection-module: cluster_entry
+      connection-id: cluster-1
+      connection-cap-id: 0x68f3d6261631c7a83159d84017dbf3a984b0e137853f0f5cb62e101ebb042ca3
+      dapps:
+        - package-id: 0x273507b0283232d745a8cef8c4ebb794708dc4522d00d93464daefa44345a5e1
+          constants:
+            clock: "0x6"
+          modules:
+            - name: xcall_manager
+              cap-id: 0xafa02d4592affcb14285a5dfd585ef5b47ad7ad68b4bbdcb659342915f8dd982
+              config-id: 0x1b8071a73e61a4b60e026875061311e9f9146d89ceb1120c35519f8e4dc47b2f
+            - name: asset_manager
+              cap-id: 0x0d7e657ed9e5494dccd2abcfec849d471bc43716a03a7b48b78bdc906b55535d
+              config-id: 0x323451f3f9526a54469f3d1db25d384dc5d9d20b63ad0db0bb42d62e0a0bf154
+            - name: balanced_dollar_crosschain
+              cap-id: 0xb3ffbef01bb8d5067ee36f2ddafac049ae62b7d4f70c349c9bb579b9a271e942
+              config-id: 0x1ecad1dfd5c22849414ba2f68113cc182a93ff01d9901c4800d0168ffd6e0cf5
+      gas-limit: 5000000
+      disabled: false
+      start-tx-digest:
+      poll-interval: 6s
